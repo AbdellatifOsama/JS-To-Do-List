@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="JavaScript To Do List App">
+    <meta name="keywords" content="To, Do, List, App, Task">
+    <meta name="author" content="Abdellatif Osama">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+    <link rel=stylesheet href=css/style.css>
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="positioned-box"></div>
+      <div class="main-content-container">
+        <!-- Date -->
+        <div id="date-box">
+          <p id="date"></p>
+        </div>
+        <div id="tasks-container">
+          <!-- Tasks -->
+          <div id="tasks"></div>
+          <!-- Add New Task -->
+          <div class="add-task-container">
+            <input id="task-input" type="text" placeholder="Add Task" />
+            <button id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <!-- Error Part -->
+          <div id="error-container">
+            <ul>
+              <li>Task Must Start With Capital Letter</li>
+              <li>Minimum Length is 2 Characters</li>
+              <li>Maximum Length is 12 Characters</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
